@@ -21,14 +21,12 @@ import java.util.HashMap;
 
 public class JSON_Data_Processor {
     //新建JSON文档
-    public static void NewJsonFile(){
+    public static void NewJsonFile() {
 
     }
+
     //读取现有JSON文档数据
-    public static void ReadJsonFile(){
-        HashMap map = new Gson().fromJson("{\"name\":\"小明\",\"age\":20}", HashMap.class);
-        System.out.println("code" + map.get("code"));
-        System.out.println("年龄：" + map.get("age"));
-    }
+    public static void ReadJsonFile() {
 
+    }
 }
