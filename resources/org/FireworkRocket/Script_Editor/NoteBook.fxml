@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="461.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.FireworkRocket.Anime_Index_Script_Editor.Script_Edit_Controller">
+    <center>
+        <TextArea fx:id="ta" prefHeight="434.0" prefWidth="658.0" text="package org.将我替换为作者名称.将我替换为扩展包名称;&#10;&#10;import org.FireworkRocket.*;&#10;&#10;&#10;/*&#10;在编写前：&#10;      ！请替换需要替换的文本。&#10;      ！请勿删除软件开头第一个import。&#10;      ！请尽量使用其他专业编译器，尽量不要使用本程序自带的编译器。&#10;      ！请确保您至少为Java入门且有一定编写Java程序的经验，操作不当可能会导致程序崩溃。&#10;      ！请确认已经在GitHub上看过本程序的代码，以确保对本程序接口和类的充分调用，避免多余代码。&#10;*/&#10;&#10;/*&#10;脚本示例代码：&#10;      Print(&quot;===========Start===========&quot;)&#10;      Get-Image(15,ALL)&#10;      SetSystemBg(DwnALL)&#10;      Goto(AnimeIndex.Software.AppHome)&#10;      Print(&quot;===========Done !===========&quot;)&#10;*/&#10;&#10;" BorderPane.alignment="CENTER" />
+    </center>
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="文件">
+                    <items>
+                        <MenuItem fx:id="NewMenu" mnemonicParsing="false" onAction="#onNewMenu" text="新建" />
+                        <MenuItem fx:id="OpenMenu" mnemonicParsing="false" onAction="#onOpenMenu" text="打开" />
+                        <MenuItem fx:id="SaveMenu" mnemonicParsing="false" onAction="#onSaveMenu" text="保存" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="编辑">
+                    <items>
+                        <MenuItem fx:id="FindMenu" mnemonicParsing="false" onAction="#onFindMenu" text="查找" />
+                        <MenuItem fx:id="ReplaceMenu" mnemonicParsing="false" onAction="#onReplaceMenu" text="替换" />
+                        <MenuItem fx:id="Undo" mnemonicParsing="false" onAction="#onUndoMenu" text="撤销" />
+                        <MenuItem fx:id="Redo" mnemonicParsing="false" onAction="#onRedoMenu" text="重做" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="格式">
+                    <items>
+                        <CheckMenuItem fx:id="WrapMenu" mnemonicParsing="false" onAction="#onWrapMenu" text="自动换行" />
+                        <MenuItem fx:id="TypefaceMenu" mnemonicParsing="false" onAction="#onTypefaceMenu" text="字体..." />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="查看">
+                    <items>
+                        <CheckMenuItem fx:id="StateMenu" mnemonicParsing="false" onAction="#onStateMenu" text="状态栏" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <bottom>
+        <Label fx:id="label" text="状态" BorderPane.alignment="CENTER" />
+    </bottom>
+</BorderPane>

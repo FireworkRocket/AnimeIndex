@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXProgressBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<!--
+  ~ Copyright [2023] [FireworkRocket@126.com]
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<AnchorPane fx:id="HomePane" prefHeight="467.0" prefWidth="993.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.FireworkRocket.FxmlControl">
+   <children>
+      <ImageView fitHeight="470.0" fitWidth="993.0" layoutY="4.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Icon/HomeBG.png" />
+         </image>
+      </ImageView>
+      <MFXProgressBar fx:id="PrBar1" animationSpeed="0.9" prefHeight="4.0" prefWidth="993.0" progress="0.0" />
+      <Label fx:id="WelcomeText1" layoutX="14.0" layoutY="14.0" prefHeight="80.0" prefWidth="865.0" text="欢迎使用 Anime Index">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="69.0" prefHeight="51.0" prefWidth="310.0" text=" 从下面或底部的选项中选择一个并开始">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <MFXButton fx:id="hingbu1" layoutX="16.0" layoutY="136.0" onAction="#picbu" prefHeight="132.0" prefWidth="158.0" text=" 图片">
+         <graphic>
+            <FontIcon fill="black" iconLiteral="mdi2i-image-area" iconSize="30" />
+         </graphic>
+      </MFXButton>
+      <MFXButton fx:id="hvcdbu1" layoutX="187.0" layoutY="136.0" onAction="#vcdbu" prefHeight="132.0" prefWidth="158.0" text=" 番剧">
+         <graphic>
+            <FontIcon fill="black" iconLiteral="mdi2m-movie-open" iconSize="30" />
+         </graphic>
+      </MFXButton>
+      <MFXButton fx:id="hideabu1" layoutX="357.0" layoutY="136.0" onAction="#ideabu" prefHeight="132.0" prefWidth="158.0" text=" 创意库">
+         <graphic>
+            <FontIcon fill="black" iconLiteral="mdi2a-account-star" iconSize="30" />
+         </graphic>
+      </MFXButton>
+      <MFXButton fx:id="hsrchbu1" layoutX="527.0" layoutY="136.0" onAction="#srchbu" prefHeight="132.0" prefWidth="158.0" text=" 搜索">
+         <graphic>
+            <FontIcon fill="black" iconLiteral="mdi2c-cloud-search" iconSize="30" />
+         </graphic>
+      </MFXButton>
+      <Label layoutX="442.0" layoutY="452.0" text="↓ |下滑以进入推荐| ↓" />
+   </children>
+</AnchorPane>
